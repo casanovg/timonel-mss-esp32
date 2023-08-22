@@ -10,4 +10,4 @@ It is a serial console-based application that allows sending commands to a devic
 * Deletes the application from the AVR device memory.
 * Optionally, it makes an on-screen dump of all the device's memory for debugging.
 
-The application has been tested on a DOIT ESP32 DevKit V1 module. It is compiled and flashed to the device using [PlatformIO](http://platformio.org) over [VS Code](http://code.visualstudio.com).
+The application has been tested on a [DOIT ESP32 DevKit V1 module](https://github.com/casanovg/timonel-mss-esp32/blob/media/DOIT-ESP32-DevKit-V1-Pinout.png). It is compiled and flashed to the device using [PlatformIO](http://platformio.org) over [VS Code](http://code.visualstudio.com).
