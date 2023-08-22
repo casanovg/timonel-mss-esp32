@@ -7,7 +7,7 @@
   Tiny85 microcontroller running the Timonel bootloader from an ESP8266
   master. It uses a serial console configured at 115200 N 8 1 for feedback.
   ............................................................................
-  Version: 1.5.0 / 2020-07-13 / gustavo.casanova@nicebots.com
+  Version: 1.5.0 / 2023-08-22 / gustavo.casanova@gmail.com
   ............................................................................
 */
 
@@ -506,7 +506,8 @@ void PrintLogo(void) {
     USE_SERIAL.printf_P("   | |_| | | | | |_| | | | | ____| |\n\r");
     USE_SERIAL.printf_P("    \\__)_|_|_|_|\\___/|_| |_|_____)\\_)\n\r");
     USE_SERIAL.printf_P("\n\r");
-    USE_SERIAL.printf_P("timonel-mss-esp32 | version: 1.5.0 | 2020-07-13 | gustavo.casanova@gmail.com\n\r");
+    USE_SERIAL.printf_P("Timonel-MSS-ESP32 | Version: %d.%d.%d | %s | %s\n\r", VER_MAJOR, VER_MINOR, VER_PATCH, VER_DATE, AUTH_MAIL);
+    USE_SERIAL.printf_P("\n\rTWI (I2C) Bus: SDA -> GPIO%d | SCL -> GPIO%d (Check board pinout)\n\r", SDA, SCL);
 }
 
 // Function RotaryDelay
